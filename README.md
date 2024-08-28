@@ -19,14 +19,14 @@ Stored procedures are created to carry out routine operations on MySQL databases
 A stored procedure is created only once, and you store it in the MySQL database. You can call the stored procedures as many times as you need in your Python-based application.
 
 ### Task 1: Establish a connection 
-Step one: Import MySQLConnectionPool
+**Step one:** Import MySQLConnectionPool
 
-Step two: Import Error
+**Step two:** Import Error
 
-Step three: Create a pool named pool_a with two connections. Use a try-except block to handle any possible errors. 
+**Step three:** Create a pool named pool_a with two connections. Use a try-except block to handle any possible errors. 
 
 ### Task 2: Implement a stored procedure called PeakHours
-Step one: Write a SQL CREATE PROCEDURE query for PeakHours
+**Step one:** Write a SQL CREATE PROCEDURE query for PeakHours
 
 Use HOUR to extract the hour part from the BookingSlot.
 
@@ -36,24 +36,24 @@ Use GROUP BY on booking hour.
 
 Use ORDER BY on the number of bookings in descending order.
 
-Step two: Run the stored procedure query by invoking execute module on the cursor.
+**Step two:** Run the stored procedure query by invoking execute module on the cursor.
 
-Step three: Invoke callproc to call the stored procedure.
+**Step three:** Invoke callproc to call the stored procedure.
 
-Step four: Fetch the results in a variable called dataset.
+**Step four:** Fetch the results in a variable called dataset.
 
-Step five: Extract the names of the columns.
+**Step five:** Extract the names of the columns.
 
-Step six: Print the names of the columns.
+**Step six:** Print the names of the columns.
 
-Step seven: Print the sorted data using for loop.
+**Step seven:** Print the sorted data using for loop.
 
 ### Task 3: Implement a stored procedure GuestStatus
-Step one: Write a SQL CREATE PROCEDURE query for GuestStatus.
+**Step one:** Write a SQL CREATE PROCEDURE query for GuestStatus.
 
-Step two: Combine the guest’s first and last name from the booking column using CONCAT. 
+**Step two:** Combine the guest’s first and last name from the booking column using CONCAT. 
 
-Step three: Use CASE to implement the following statuses for each guest’s order:
+**Step three:** Use CASE to implement the following statuses for each guest’s order:
 
 If the Role in the Employee table is Manager or Assistant Manager then the guest’s order status is Ready to pay
 
@@ -63,21 +63,21 @@ If the Role in the Employee table is Assistant Chef then the status is Preparing
 
 If the Role in the Employee table is Head Waiter then the status is Order served
 
-Step four: LEFT JOIN Bookings table with Employees ON EmployeeID
+**Step four:** LEFT JOIN Bookings table with Employees ON EmployeeID
 
-Step five: Run the stored procedure query by invoking execute module on the cursor.
+**Step five:** Run the stored procedure query by invoking execute module on the cursor.
 
-Step six: Invoke callproc to call the stored procedure.
+**Step six:** Invoke callproc to call the stored procedure.
 
-Step seven: Fetch the results in a variable called dataset.
+**Step seven:** Fetch the results in a variable called dataset.
 
-Step eight: Extract the names of the columns.
+**Step eight:** Extract the names of the columns.
 
-Step nine: Print the names of the columns.
+**Step nine:** Print the names of the columns.
 
-Step ten: Print the sorted data using for loop.
+**Step ten:** Print the sorted data using for loop.
 
-Step eleven: Close the connection to return it back to the pool.
+**Step eleven:** Close the connection to return it back to the pool.
 
 
 ## Little Lemon analysis and sales report
