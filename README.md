@@ -1,4 +1,4 @@
-### Database Clients
+# Database Clients
 Explore how to write database driven applications in Python by creating various types of clients that connect to MySQL databases using Python code and Python-related MySQL features and tools. 
 
 
@@ -18,14 +18,14 @@ Stored procedures are created to carry out routine operations on MySQL databases
 
 A stored procedure is created only once, and you store it in the MySQL database. You can call the stored procedures as many times as you need in your Python-based application.
 
-# Task 1: Establish a connection 
+### Task 1: Establish a connection 
 Step one: Import MySQLConnectionPool
 
 Step two: Import Error
 
 Step three: Create a pool named pool_a with two connections. Use a try-except block to handle any possible errors. 
 
-# Task 2: Implement a stored procedure called PeakHours
+### Task 2: Implement a stored procedure called PeakHours
 Step one: Write a SQL CREATE PROCEDURE query for PeakHours
 
 Use HOUR to extract the hour part from the BookingSlot.
@@ -48,7 +48,7 @@ Step six: Print the names of the columns.
 
 Step seven: Print the sorted data using for loop.
 
-# Task 3: Implement a stored procedure GuestStatus
+### Task 3: Implement a stored procedure GuestStatus
 Step one: Write a SQL CREATE PROCEDURE query for GuestStatus.
 
 Step two: Combine the guest’s first and last name from the booking column using CONCAT. 
@@ -82,7 +82,7 @@ Step eleven: Close the connection to return it back to the pool.
 
 ## Little Lemon analysis and sales report
 
-# Task 1:
+### Task 1:
 Complete the following steps to establish a connection pool:
 
 To create a connection pool, import MySQLConnectionPool class from MySQL Connector/Python.
@@ -95,7 +95,7 @@ Establish a connection pool [pool_name = pool_b] with two connections.
 
 Implement error handling using a try-except block in case the connection fails. 
 
-# Task 2:
+### Task 2:
 Three guests are trying to book dinner slots simultaneously. Get the connections from pool_b and insert the following data in the Bookings table:
 
 
@@ -143,7 +143,7 @@ EmployeeID: 6
 
 Return all the connections back to the pool. 
 
-# Task 3:
+### Task 3:
 Create a report containing the following information:
 
 The name and EmployeeID of the Little Lemon manager.
@@ -154,7 +154,7 @@ The number of guests booked between 18:00 and 20:00.
 
 The full name and BookingID of all guests waiting to be seated with the receptionist in sorted order with respect to their BookingSlot.
 
-# Task 4:
+### Task 4:
 Create a stored procedure named BasicSalesReport that returns the following statistics: 
 
 Total sales
@@ -165,7 +165,7 @@ Minimum bill paid
 
 Maximum bill paid
 
-# Task 5:
+### Task 5:
 Little Lemon needs to display the next three upcoming bookings from the Bookings table on the kitchen screen to notify their chefs which orders are due next. To complete this task, carry out the following steps:
 
 Get a connection from the pool.
